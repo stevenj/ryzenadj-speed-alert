@@ -3,6 +3,8 @@ Description=Ryzenadj Based Speed Change Alert - Service
 
 [Service]
 ExecStart=/root/ryzenadj-speed-alert/check-power.sh
+StandardOutput=journal
+StandardError=journal
 
 [Install]
 WantedBy=multi-user.target

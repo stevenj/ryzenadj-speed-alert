@@ -5,7 +5,6 @@
 
 FAST_SOUND=/usr/share/sounds/freedesktop/stereo/service-login.oga
 SLOW_SOUND=/usr/share/sounds/freedesktop/stereo/service-logout.oga
-SPEED_THRESHOLD=20
 
 # Get the current value of the floating point number from the file
 current_value=$(cat /tmp/watts)

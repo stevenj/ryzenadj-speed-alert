@@ -2,7 +2,7 @@
 Description=Ryzenadj Based Speed Change Alert - Service
 
 [Service]
-ExecStart=/root/ryzenadj-speed-alert/check-power.sh
+ExecStart=/bin/bash -lc /root/ryzenadj-speed-alert/check-power.sh
 StandardOutput=journal
 StandardError=journal
 

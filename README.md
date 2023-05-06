@@ -15,7 +15,7 @@ git clone https://github.com/stevenj/ryzenadj-speed-alert.git
 ln -s /root/ryzenadj-speed-alert/speed-change-alert.timer /etc/systemd/system/speed-change-alert.timer
 ln -s /root/ryzenadj-speed-alert/speed-change-alert.service /etc/systemd/system/speed-change-alert.service
 systemctl daemon-reload
-systemctl enable speed-change-alert.timer
+systemctl enable --now speed-change-alert.timer
 systemctl start speed-change-alert.timer
 ```
 
@@ -26,3 +26,7 @@ You can change the sounds in the `check-power.sh` script.
 ## Changing the interval it checks
 
 Change the interval the speed change is checked in `speed-change-alert.timer`
+
+*NOTE:* For some reason, I experience very unreliable and erratic behavior from systemd timers.
+So while the script says 10 seconds,  it seems to be any random number between 10 seconds and 10 minutes.
+If anyone has an explanation for this I would love to hear it.

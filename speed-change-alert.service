@@ -1,0 +1,8 @@
+[Unit]
+Description=Ryzenadj Based Speed Change Alert - Service
+
+[Service]
+ExecStart=/root/ryzenadj-speed-alert/check-power.sh
+
+[Install]
+WantedBy=multi-user.target

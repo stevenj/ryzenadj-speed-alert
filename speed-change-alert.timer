@@ -1,0 +1,12 @@
+[Unit]
+Description=Ryzenadj Based Speed Change Alert - Timer
+
+[Timer]
+
+# Run the timer every 10 seconds
+
+OnUnitActiveSec=10s
+Unit=speed-change-alert.service
+
+[Install]
+WantedBy=timers.target
